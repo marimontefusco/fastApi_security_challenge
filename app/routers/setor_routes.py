@@ -5,7 +5,6 @@ from db.database import engine
 from db.deps import auth
 from db.models import Setores as SetorModel
 from schemas.setor import Setores, SetorRequest, SetorResponse
-from sqlalchemy.orm import Session
 from repository.setor import SetorRepository
 from db.deps import get_db_session
 

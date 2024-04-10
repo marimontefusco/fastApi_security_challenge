@@ -1,4 +1,3 @@
-import re
 from pydantic import BaseModel
 from datetime import datetime
 
@@ -17,6 +16,7 @@ class TokenData(BaseModel):
 class UsuariosResponse(Usuarios):
     username: str
     password: str
+    
     class Config:
         from_attributes=True    
         orm_mode = True

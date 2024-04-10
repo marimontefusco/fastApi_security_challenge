@@ -6,7 +6,7 @@ from pathlib import Path
 
 # app\db\.env
 #vai no file env e armazena numa variável
-caminho = Path('app\db') / '.env'
+caminho = Path('db') / '.env'
 print(caminho)
 load_dotenv(dotenv_path=caminho)
 

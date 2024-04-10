@@ -1,9 +1,7 @@
-from pydantic import BaseModel
-from pydantic import validator
+from pydantic import BaseModel, validator
 import re
 
-#TODO criar pasta caso de uso
-# #Este arquivo ficam as regras de negócio
+# neste arquivo ficam as regras de negócio
 
 class Produtos(BaseModel):
     item: str
@@ -23,13 +21,11 @@ class Produtos(BaseModel):
             raise ValueError('Invalid item')
         return value
 
-
 class ProdutoRequest(Produtos):
     item: str
     peso: float
     numero_caixas: int
     id_setor: int
-
 
 class ProdutoResponse(Produtos):
     id: int

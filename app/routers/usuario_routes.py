@@ -3,7 +3,6 @@ from db.database import engine
 from db.deps import get_db_session
 from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
-from sqlalchemy.orm import Session
 from repository.usuario import UsuariosRepository
 from db.models import Usuarios as UsuariosModel
 from schemas.usuario import Usuarios, UsuariosRequest, UsuariosResponse

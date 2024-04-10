@@ -4,7 +4,6 @@ from sqlalchemy.orm import Session
 from db.database import engine
 from db.models import Produtos as ProdutosModel
 from schemas.produto import Produtos, ProdutoRequest, ProdutoResponse
-from sqlalchemy.orm import Session
 from repository.produto import ProdutoRepository
 from db.deps import auth, get_db_session
 from db.base import Base

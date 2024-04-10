@@ -1,9 +1,5 @@
-from pydantic import BaseModel
-from pydantic import validator
+from pydantic import BaseModel, validator
 import re
-
-#TODO criar pasta caso de uso
-# #Este arquivo ficam as regras de negócio
 
 class Setores(BaseModel):
     id: int
