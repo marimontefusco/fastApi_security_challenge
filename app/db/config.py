@@ -1,8 +1,8 @@
 import os
 from dotenv import load_dotenv
-#TODO
 from pathlib import Path
 
+# Caminho do Projeto:
 
 # app\db\.env
 #vai no file env e armazena numa variável

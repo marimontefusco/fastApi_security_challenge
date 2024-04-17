@@ -16,7 +16,10 @@ class TokenData(BaseModel):
 class UsuariosResponse(Usuarios):
     username: str
     password: str
-    
+
     class Config:
-        from_attributes=True    
-        orm_mode = True
+        from_attributes =True
+        orm_mode=True
+
+    
+

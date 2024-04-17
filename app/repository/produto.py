@@ -8,7 +8,7 @@ class ProdutoRepository:
         return db.query(Produtos).all()
 
     @staticmethod
-    def save(db: Session, produto: Produtos) -> Produtos:
+    def save_product(db: Session, produto: Produtos) -> Produtos:
         if produto.id:
             db.merge(produto)
         else:
@@ -25,11 +25,11 @@ class ProdutoRepository:
         return db.query(Produtos).filter(Produtos.item == nome_item).first()
 
     @staticmethod
-    def exists_by_id(db: Session, id: int) -> bool:
+    def exists_by_id_product(db: Session, id: int) -> bool:
         return db.query(Produtos).filter(Produtos.id == id).first() is not None
 
     @staticmethod
-    def delete_by_id(db: Session, id: int) -> None:
+    def delete_product_by_id(db: Session, id: int) -> None:
         produto = db.query(Produtos).filter(Produtos.id == id).first()
         if produto is not None:
             db.delete(produto)

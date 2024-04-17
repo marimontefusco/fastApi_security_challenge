@@ -5,9 +5,8 @@ from repository.usuario import UsuariosRepository
 from db.config import settings
 from fastapi import Depends
 from sqlalchemy.orm import sessionmaker
-
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+
 
 SQLALCHEMY_DATABASE_URL = settings.DATABASE_URL
 print("Database URL is ",SQLALCHEMY_DATABASE_URL)

@@ -8,8 +8,6 @@ from repository.produto import ProdutoRepository
 from db.deps import auth, get_db_session
 from db.base import Base
 
-
-
 #cria a tabela
 Base.metadata.create_all(bind=engine)
 router = APIRouter(prefix="/v1/api/produtos",dependencies=[Depends(auth)])
