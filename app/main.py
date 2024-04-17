@@ -21,4 +21,4 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl = "token")
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="127.0.0.1", port=8003, reload=True)
+    uvicorn.run("main:app", host="127.0.0.1", port=8005, reload=True)
