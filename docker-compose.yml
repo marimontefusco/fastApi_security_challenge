@@ -1,8 +1,8 @@
 services:
-  postgresql1:
-    image: postgres
-    environment:
-      POSTGRES_USER: example
-      POSTGRES_PASSWORD: example
-    ports:
-      - 5432:5432
+    postgresql1_desafio:
+        image: postgres
+        environment:
+            POSTGRES_USER: mariana
+            POSTGRES_PASSWORD: pass#123
+        ports:
+            - 5432:5432
